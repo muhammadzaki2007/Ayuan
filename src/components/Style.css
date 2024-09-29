@@ -1,0 +1,188 @@
+body {
+    background-image: url('https://tse1.mm.bing.net/th?id=OIP.91xXPGOeklovTSuZHyDHVwHaEo&pid=Api&P=0&h=180');
+    background-size: cover; /* Biar nutup semua layar */
+    background-position: center;
+}
+
+
+.card {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparan tapi ada warna dikit */
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    backdrop-filter: blur(10px); /* Ini yang bikin blur */
+}
+
+header {
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+nav {
+    margin: 15px 0;
+}
+
+nav button {
+    background-color: green;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    background-color: black;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+}
+
+.profile{
+    color: black;
+}
+footer {
+    margin-top: 20px;
+    background-color: red;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.aboutme-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #181818; /* Warna background */
+    color: #fff; /* Warna teks */
+    border-radius: 10px;
+  }
+  
+  .aboutme-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    background-color: #2e2e2e; /* Warna background konten */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .aboutme-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ff6f00; /* Border warna orange */
+  }
+  
+  .aboutme-text {
+    margin-left: 20px;
+  }
+  
+  .aboutme-text h2 {
+    font-size: 24px;
+    color: #ff6f00; /* Warna teks utama */
+  }
+  
+  .aboutme-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #d3d3d3;
+  }
+
+  .skill-pengalaman-container {
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: auto;
+}
+
+.title {
+    font-size: 24px;
+    color: #6c63ff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.divider {
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    background-color: #6c63ff;
+    margin-left: 10px;
+}
+
+.skill-pengalaman-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-section, .pengalaman-section {
+    width: 93%;
+    color: black;
+}
+
+.skill-section ul, .pengalaman-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-section li, .pengalaman-section li {
+    margin: 10px 0;
+    font-size: 18px;
+    color: black;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: wheat;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 8px;
+    background-color: #6c63ff;
+    border-radius: 10px;
+}
+
+/* Atur wrapper untuk flex layout */
+.content-wrapper {
+    display: flex; /* Ini untuk bikin layout horizontal */
+    justify-content: space-between; /* Ini untuk memberi jarak di antara elemen */
+    align-items: flex-start; /* Supaya item disejajarkan di bagian atas */
+    gap: 20px; /* Jarak antar skill dan pengalaman */
+    padding: 20px;
+}
+
+/* Style untuk bagian skill dan pengalaman */
+.skill-section, .pengalaman-section {
+    flex: 1; /* Supaya keduanya bisa bagi ruang secara seimbang */
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Untuk mobile view atau layar kecil, bisa tambahkan media query agar mereka stack secara vertikal lagi */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; /* Stack vertikal di layar kecil */
+    }
+}
+
+
